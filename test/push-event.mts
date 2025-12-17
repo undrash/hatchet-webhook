@@ -1,6 +1,6 @@
 import { hatchet } from "../clients.js"
 
-await hatchet.event.push("created", {
+await hatchet.event.push("github:star:created", {
     action: "created",
     sender: {
         login: "test-user",

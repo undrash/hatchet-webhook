@@ -15,7 +15,7 @@ type StarCreated = {
 
 export const created = hatchet.task({
     name: "star",
-    onEvents: ["created"],
+    onEvents: ["github:star:created"],
     fn: async ({ sender: { login, email, html_url }, repository }: StarCreated) => {
         console.log("⭐ New star!")
         console.log(`  User: ${login || "Unknown"}${email ? ` (${email})` : ""}`)
