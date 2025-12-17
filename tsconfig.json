@@ -14,14 +14,6 @@
     "declaration": true,
     "sourceMap": true
   },
-  "include": [
-    "*.ts",
-    "*.mts",
-    "**/*.ts",
-    "**/*.mts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["*.ts", "*.mts", "**/*.ts", "**/*.mts"],
+  "exclude": ["node_modules", "dist"]
 }

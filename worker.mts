@@ -1,8 +1,8 @@
-import { hatchet } from "./clients.js"
-import { created } from "./tasks/created.js"
+import { hatchet } from './clients.js';
+import { created } from './tasks/created.js';
 
-const worker = await hatchet.worker("github-worker", {
-    workflows: [created],
-})
+const worker = await hatchet.worker('github-worker', {
+  workflows: [created],
+});
 
-await worker.start()
+await worker.start();
